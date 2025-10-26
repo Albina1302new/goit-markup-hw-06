@@ -126,7 +126,7 @@ button {
   height: 4px;
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: 0;
   border-radius: 2px;
 }
 .page-header a {
@@ -1395,7 +1395,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-hero-office\ 1@2x-min.jpg);
+      url(../images/people-hero-office1@2x-min.jpg);
   }
 
   .first-section-container {
@@ -1583,6 +1583,6 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-hero-office\1@2x-min.jpg);
+      url(../images/people-hero-office1@2x-min.jpg);
   }
 }
