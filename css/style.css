@@ -1338,7 +1338,7 @@ button {
   }
 
   .checkbox-label-span {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
@@ -1549,7 +1549,7 @@ button {
   }
 
   .checkbox-label-span {
-    width: 100%;
+    /* width: 100%; */
     display: inline-block;
   }
 }
