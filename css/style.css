@@ -1291,6 +1291,7 @@ button {
     align-items: flex-start;
     flex-basis: 264px;
     flex-shrink: 0;
+    margin-right: 20px; /*відступи для планшету*/
   }
 
   .text-footer {
