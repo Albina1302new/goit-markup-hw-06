@@ -23,12 +23,12 @@
   <body>
     <!-- HEADER -->
     <header class="page-header">
-      <div class="container header-container">
+      <div class="header-container container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
-          <ul class="list-nav">
+          <ul class="list-nav-container">
             <li class="item-nav">
               <a class="link-nav current" href="./index.html">Studio</a>
             </li>
@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <address class="contacts">
-          <ul class="contacts-list">
+          <ul class="contacts-list-container">
             <li class="contacts-item">
               <a class="contacts-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -50,13 +50,82 @@
             </li>
           </ul>
         </address>
+        <button class="mobil-menu-button" data-mobile-menu-open>
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobil-menu" data-mobile-menu-modal>
+        <div class="mobil-menu-wraper">
+          <button class="mobil-menu-close-button" data-mobile-menu-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mobile-header-navigation">
+            <ul class="list-nav-container">
+              <li class="item-nav">
+                <a class="link-nav current" href="./index.html">Studio</a>
+              </li>
+              <li class="item-nav">
+                <a class="link-nav" href="">Portfolio</a>
+              </li>
+              <li class="item-nav"><a class="link-nav" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="contacts-list-container">
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="media-container">
+            <li class="media-item">
+              <a class="media-link" href="" target="_blank">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="" target="_blank">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="" target="_blank">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- MAIN -->
     <main>
       <!-- Hero Section-->
       <section class="page-button">
-        <div class="container">
+        <div class="first-section-container container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
@@ -129,7 +198,16 @@
           <h2 class="team-titles">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/img.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                class="third-section-card-image"
+                srcset="
+                  ./images/imagecompressor-2/team-1-min.jpg    1x,
+                  ./images/imagecompressor-2/team-1@2x-min.jpg 2x
+                "
+                src="./images/./imagecompressor-2/team-1-min.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="name-container">
                 <h3 class="team-title">Mark Guerrero</h3>
                 <p class="item-text">Product Designer</p>
@@ -166,7 +244,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img(1)(2).jpg" alt="Tom Ford" width="264" />
+              <img
+                class="third-section-card-image"
+                srcset="
+                  ./images/imagecompressor-2/team-2-min.jpg    1x,
+                  ./images/imagecompressor-2/team-2@2x-min.jpg
+                "
+                src="./images/imagecompressor-2/team-2-min.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="name-container">
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="item-text">Frontend Developer</p>
@@ -203,7 +290,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img(3).jpg" alt="Camila Garcia" width="264" />
+              <img
+                class="third-section-card-image"
+                srcset="
+                  ./images/imagecompressor-2/img@2x-min.jpg 2x,
+                  ./images/imagecompressor-2/img-min.jpg    1x
+                "
+                src="./images/imagecompressor-2/img@3x-min.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="name-container">
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="item-text">Marketing</p>
@@ -241,7 +337,12 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img(2)(1).jpg"
+                class="third-section-card-image"
+                srcset="
+                  ./images/imagecompressor-2/team-4-min.jpg    1x,
+                  ./images/imagecompressor-2/team-4@2x-min.jpg 2x
+                "
+                src="./images/imagecompressor-2/team-4-min.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -290,7 +391,12 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/Banking.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/portfolio/img@2x-min.jpg 2x,
+                    ./images/portfolio/img-min.jpg    1x
+                  "
+                  src="./images/portfolio/img-min.jpg"
                   alt="banking app"
                   width="360"
                   height="300"
@@ -309,7 +415,12 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/Cashlees.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/portfolio/img@2x-min-1.jpg 2x,
+                    ./images/portfolio/img-min-1.jpg    1x
+                  "
+                  src="./images/portfolio/img-min-1.jpg"
                   alt="cashlees app"
                   width="360"
                   height="300"
@@ -328,7 +439,12 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/Meditation.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/portfolio/img@2x-min-1-2.jpg 2x,
+                    ./images/portfolio/img-min-1-2.jpg    1x
+                  "
+                  src="./images/portfolio/img-min-1-2.jpg"
                   alt="meditation app"
                   width="360"
                   height="300"
@@ -347,7 +463,12 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/Taxi.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/portfolio/img-min-1-2-3.jpg    1x,
+                    ./images/portfolio/img@2x-min-1-2-3.jpg 2x
+                  "
+                  src="./images/portfolio/img-min-1-2-3.jpg"
                   alt="taxi service"
                   width="360"
                   height="300"
@@ -366,7 +487,12 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/Screen.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/portfolio/img-min-1-2-3-4.jpg    1x,
+                    ./images/portfolio/img@2x-min-1-2-3-4.jpg 2x
+                  "
+                  src="./images/portfolio/img-min-1-2-3-4.jpg"
                   alt="screen illustrations"
                   width="360"
                   height="300"
@@ -386,7 +512,12 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  src="./images/online.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/portfolio/img-min-1-2-3-4-5.jpg    1x,
+                    ./images/portfolio/img@2x-min-1-2-3-4-5.jpg 2x
+                  "
+                  src="./images/portfolio/img-min-1-2-3-4-5.jpg"
                   alt="courses"
                   width="360"
                   height="300"
